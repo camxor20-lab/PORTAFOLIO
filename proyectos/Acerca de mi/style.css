@@ -1,0 +1,105 @@
+body{
+font-family: Arial;
+margin:0;
+}
+
+.menu{
+background: #ff4a2a;
+color:white;
+padding:5px;
+width: 100%;
+height: 50px;
+}
+.nombre{
+font-weight:bold;
+font-size:18px;
+padding-left:20px;
+}
+
+.opcion{
+text-align:center;
+cursor:pointer;
+padding: 10px 20px;
+margin: 0;
+}
+
+.opcion:hover{
+background: #e03e1b;
+}
+
+.principal{
+padding:60px;
+background:#f4f4f4;
+}
+
+.principal td{
+    border-left: 240px solid transparent;
+}
+
+.principal img{
+width: 400px;
+BOX-SHADOW: 0px 0px 10px blue;
+}
+
+.seccion{
+    padding: 200px;
+    text-align: center;
+}
+
+h1{
+color:#ff4a2a;
+font-size:45px;
+}
+
+p{
+font-size:18px;
+color:#555;
+}
+
+
+button{
+background:#ff4a2a;
+color:white;
+border:none;
+padding:8px 15px;
+cursor:pointer;
+font-size:16px;
+margin-top:10px;
+}
+
+.proyecto{
+    width: 300px;  
+    height: 200px;
+    box-shadow: 0px 0px 10px blue  ;
+}
+.opcionesm p{
+   float: right;
+   color: #fff;
+}
+.ultimo{
+    background: #e03e1b;
+    text-align: center;
+    color:#ff4a2a;
+    padding: 50px;
+    width: 100%;
+}
+.ui{
+    background: #e03e1b;
+    color:#ff4a2a;
+    width: 100%;
+    padding: 20px;
+}
+
+.uiimg{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.txui{
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    margin-top: -20px;
+}
