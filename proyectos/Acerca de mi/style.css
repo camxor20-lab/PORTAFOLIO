@@ -1,105 +1,184 @@
 body{
-font-family: Arial;
-margin:0;
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
 }
+
 
 .menu{
-background: #ff4a2a;
-color:white;
-padding:5px;
-width: 100%;
-height: 50px;
-}
-.nombre{
-font-weight:bold;
-font-size:18px;
-padding-left:20px;
+  background: #3b3f46;
+  color: white;
+  padding: 20px 190px;
+  overflow: hidden;
 }
 
-.opcion{
-text-align:center;
-cursor:pointer;
-padding: 10px 20px;
-margin: 0;
+.logo{
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
 }
 
-.opcion:hover{
-background: #e03e1b;
+.nav{
+  float: right;
 }
+
+.nav a{
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.nav a:hover{
+  color: #ff4a2a;
+}
+
 
 .principal{
-padding:60px;
-background:#f4f4f4;
+  padding: 60px;
+  background: #f4f4f4;
+  text-align: center;
 }
 
-.principal td{
-    border-left: 240px solid transparent;
+.principal-img,
+.principal-texto{
+  display: inline-block;
+  vertical-align: middle;
 }
 
-.principal img{
-width: 400px;
-BOX-SHADOW: 0px 0px 10px blue;
+.principal-img img{
+  width: 450px;
+  border: 1px solid blue;
+  border-radius: 10px;
 }
+
+.principal-texto{
+  max-width: 500px;
+  text-align: left;
+  margin-left: 40px;
+}
+
+.principal-texto h1{
+  color: #ff4a2a;
+  font-size: 55px;
+  margin-bottom: 20px;
+}
+
+.principal-texto p{
+  font-size: 18px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.principal-texto button{
+  background: #ff4a2a;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.principal-texto button:hover{
+  background: #e03e1b;
+}
+
+
+.seccion-naranja{
+  background: #ff4a2a;
+  text-align: center;
+  padding: 60px 100px;
+  color: white;
+}
+
+.seccion-naranja img{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+.seccion-naranja p{
+  font-size: 28px;
+  line-height: 1.5;
+}
+
+.seccion-naranja h3{
+  margin-top: 30px;
+  font-style: italic;
+  font-weight: normal;
+}
+
 
 .seccion{
-    padding: 200px;
-    text-align: center;
+  text-align: center;
+  padding: 20px;
 }
 
-h1{
-color:#ff4a2a;
-font-size:45px;
+.seccion h1{
+  color: #ff4a2a;
+  font-size: 45px;
+  margin: 6px;
 }
 
-p{
-font-size:18px;
-color:#555;
+.proyectos-container{
+  text-align: center;
+  padding: 20px 80px;
+}
+
+.card{
+  width: 320px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+  text-align: center;
+  margin: 15px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.card img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card h3{
+  margin: 15px 0;
+}
+
+.card p{
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+  height: 120px;
+}
+
+.card button{
+  background: #ff4a2a;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 30px;
+}
+
+.card button:hover{
+  background: #e03e1b;
 }
 
 
-button{
-background:#ff4a2a;
-color:white;
-border:none;
-padding:8px 15px;
-cursor:pointer;
-font-size:16px;
-margin-top:10px;
+.footer{
+  background: #3b3f46;
+  color: white;
+  text-align: right;
+  padding: 8px 250px;
+  clear: both;
 }
 
-.proyecto{
-    width: 300px;  
-    height: 200px;
-    box-shadow: 0px 0px 10px blue  ;
-}
-.opcionesm p{
-   float: right;
-   color: #fff;
-}
-.ultimo{
-    background: #e03e1b;
-    text-align: center;
-    color:#ff4a2a;
-    padding: 50px;
-    width: 100%;
-}
-.ui{
-    background: #e03e1b;
-    color:#ff4a2a;
-    width: 100%;
-    padding: 20px;
-}
-
-.uiimg{
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
-    text-align: center;
-}
-
-.txui{
-    font-size: 20px;
-    color: #fff;
-    text-align: center;
-    margin-top: -20px;
+.pp{
+  padding: 10px;
 }
