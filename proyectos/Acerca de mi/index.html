@@ -1,132 +1,105 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>Camilo Andres Aguirre Daza</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Camilo Andres Aguirre Daza</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<table class="menu">
-<tr>
-<td class="nombre">Camilo Aguirre</td>
-<td class="opcionesm">
-<p class="opcion">Proyectos</p>
-<p class="opcion">¿Quién soy?</p>
-<p class="opcion">Inicio</p>
-</td>
-</tr>
-</table>
+  <header class="menu">
+    <div class="logo">Camilo Aguirre</div>
 
+    <nav class="nav">
+      <a href="#">Inicio</a>
+      <a href="#">¿Quién soy?</a>
+      <a href="#">Proyectos</a>
+    </nav>
+  </header>
 
-<table class="principal">
-<tr>
+  <section class="principal">
+    <div class="principal-img">
+      <img src="img/Profile.png" alt="perfil">
+    </div>
 
-<td> 
-<img src="img/Profile.png">
-</td>
+    <div class="principal-texto">
+      <h1>¿Quién soy?</h1>
+      <p>
+        Mi nombre es <b>Camilo Andres Aguirre Daza</b>. 
+        Soy apasionado por el desarrollo web y me gusta el fútbol. 
+        Me gusta aprender nuevas tecnologías y crear páginas web modernas.
+      </p>
 
-<td>
-<h1>¿Quién soy?</h1>
+      <button>Leer más</button>
+    </div>
+  </section>
 
-<p>
-Mi nombre es <b>Camilo Andres Aguirre Daza</b>.  
-Soy apasionado por el desarrollo web y me gusta el fútbol.  
-Me gusta aprender nuevas tecnologías y crear páginas web modernas.
-</p>
+  <section class="seccion-naranja">
+    <img src="img/P2.png" alt="avatar">
+    
+    <p>
+      Soy estudiante de programación web con conocimientos en HTML, CSS y JavaScript.
+      Me gusta desarrollar sitios web atractivos, organizados y funcionales, poniendo en práctica
+      buenas estructuras y estilos modernos. Actualmente continúo aprendiendo y creando proyectos
+      para mejorar mis habilidades en desarrollo web. En mi tiempo libre disfruto jugar fútbol y
+      explorar nuevas tecnologías relacionadas con la programación.
+    </p>
 
-<button>Leer más</button>
-</td>
+    <h3>- Camilo Aguirre</h3>
+  </section>
 
-</tr>
-</table>
-
-<table class="ui">
-<tr>
-<td class="uiimg">
-    <img src="img/P2.png" class="uiimg" alt="">
-</td>
-</tr>
-</table>
-<table class="ultimo">
-<tr>
-<td>
-    <p class="txui"> Soy estudiante de programación web con conocimientos en HTML, CSS y JavaScript. Me gusta desarrollar sitios web atractivos, organizados y funcionales, poniendo en práctica buenas estructuras y estilos modernos. Actualmente continúo aprendiendo y creando proyectos para mejorar mis habilidades en desarrollo web. En mi tiempo libre disfruto jugar fútbol y explorar nuevas tecnologías relacionadas con la programación.</p>
-    <p class="txui"> -Camilo Aguirre</p>
-</td>
-</tr>
-</table>
-
-<div class="seccion">
-
+  <section class="seccion">
     <h1>Mis Proyectos</h1>
-    
-    <table>
-<tr> 
 
+    <div class="proyectos-container">
 
-<td>
-<img src="img/1.png" class="proyecto" alt="">
-                
-<p><strong>Proyecto 1</strong></p> 
-        
-                
-<p>
-Pagina web desarrollada con HTML, enfocada en practicar la estructura basica de una pagina web. Incluye el uso de etiquetas semanticas, enlaces, imágenes y listas para organizar el contenido de manera clara y accesible.
-</p>
+      <div class="card">
+        <img src="img/1.png" alt="">
+        <h3>Proyecto 1</h3>
+        <p>
+          Página web desarrollada con HTML puro, enfocada en comprender la estructura base de un sitio web. 
+          Incluye el uso de etiquetas semánticas como header, nav y section, además de enlaces, imágenes y listas.
+        </p>
+        <button>Ver proyecto</button>
+      </div>
 
-<button>Ver proyecto</button>
+      <div class="card">
+        <img src="img/2.png" alt="">
+        <h3>Proyecto 2</h3>
+        <p>
+          Diseño de una página web utilizando tablas HTML para organizar el contenido. 
+          Aprendí a estructurar información en filas y columnas, manejar celdas y mejorar la presentación de datos.
+        </p>
+        <button>Ver proyecto</button>
+      </div>
 
-</td>
+      <div class="card">
+        <img src="img/3.png" alt="">
+        <h3>Proyecto 3</h3>
+        <p>
+          Sitio web enfocado en el uso de CSS para mejorar la apariencia visual. 
+          Apliqué estilos como colores, tipografías, márgenes, padding y alineación de elementos.
+        </p>
+        <button>Ver proyecto</button>
+      </div>
 
-<td>
-    <img src="img/2.png" class="proyecto" alt="">
-    
-    <p><strong>Proyecto 2</strong></p>
-    
-    <p>
-       Diseño de una página web utilizando tablas HTML para organizar y estructurar el contenido. Este proyecto permitió comprender cómo se distribuía la información en los primeros diseños web y cómo manejar filas, columnas y celdas.
-</p>
+      <div class="card">
+        <img src="img/4.png" alt="">
+        <h3>Proyecto 4</h3>
+        <p>
+          Página web personal donde presento mis intereses y hobbies. 
+          Combina HTML y CSS para crear secciones organizadas con un diseño más completo.
+        </p>
+        <button>Ver proyecto</button>
+      </div>
 
-<button>Ver proyecto</button>
+    </div>
+  </section>
 
-</td>
+  <footer class="footer">
 
-
-<td>
-    
-    <img src="img/3.png" class="proyecto" alt="">
-    
-    <p><strong>Proyecto 3</strong></p>
-    
-    <p>
-       Pequeño sitio web donde practiqué CSS para aplicar estilos visuales a una página. Incluye personalización de colores, tipografías, márgenes y alineación de elementos para mejorar la presentación y el diseño del sitio.
-    </p>
-    
-    <button>Ver proyecto</button>
-    
-</td>
-
-
-<td>
-    
-    <img src="img/4.png" class="proyecto" alt="">
-    
-    <p><strong>Proyecto 4</strong></p>
-    
-    <p>
-       Sitio web personal donde presento algunos de mis hobbies e intereses. Este proyecto combina estructura HTML y estilos básicos para crear una página informativa con contenido visual y secciones organizadas.
-    </p>
-    
-    <button>Ver proyecto</button>
-    
-</td>
-
-</tr>
-
-</table>
-</div>
+    <p class ="pp">Copyright © 2026. Todos los derechos reservados. </p>
+  </footer>
 
 </body>
 </html>
