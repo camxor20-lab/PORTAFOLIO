@@ -192,7 +192,6 @@ body{
   }
 
   .logo {
-    display: block;
     margin-bottom: 10px;
   }
 
@@ -201,19 +200,11 @@ body{
   }
 
   .nav a {
-    display: inline-block;
     margin: 5px 10px;
   }
 
   .principal {
     padding: 30px 15px;
-  }
-
-  .principal-img,
-  .principal-texto {
-    display: block;
-    text-align: center;
-    margin: 0;
   }
 
   .principal-img img {
@@ -223,6 +214,8 @@ body{
 
   .principal-texto {
     max-width: 100%;
+    text-align: center;
+    margin: 20px 0 0 0;
   }
 
   .principal-texto h1 {
@@ -253,7 +246,6 @@ body{
   .card {
     width: 90%;
     margin: 15px auto;
-    display: block;
   }
 
   .footer {
