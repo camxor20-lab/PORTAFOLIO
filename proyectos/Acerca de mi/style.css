@@ -13,7 +13,7 @@ body{
 }
 
 .logo{
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
   display: inline-block;
 }
@@ -26,7 +26,7 @@ body{
   text-decoration: none;
   color: white;
   margin-left: 20px;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .nav a:hover{
@@ -65,7 +65,7 @@ body{
 }
 
 .principal-texto p{
-  font-size: 18px;
+  font-size: 25px;
   color: #555;
   line-height: 1.5;
 }
@@ -79,11 +79,6 @@ body{
   font-size: 16px;
   margin-top: 20px;
 }
-
-.principal-texto button:hover{
-  background: #e03e1b;
-}
-
 
 .seccion-naranja{
   background: #ff4a2a;
@@ -122,6 +117,7 @@ body{
   margin: 6px;
 }
 
+
 .proyectos-container{
   text-align: center;
   padding: 20px 80px;
@@ -150,7 +146,7 @@ body{
 }
 
 .card p{
-  font-size: 14px;
+  font-size: 18px;
   color: #555;
   line-height: 1.5;
   height: 120px;
@@ -166,10 +162,6 @@ body{
   margin: 30px;
 }
 
-.card button:hover{
-  background: #e03e1b;
-}
-
 
 .footer{
   background: #3b3f46;
@@ -179,12 +171,9 @@ body{
   clear: both;
 }
 
-.pp{
-  padding: 10px;
-}
-
 
 @media (max-width: 700px) {
+
 
   .menu {
     padding: 15px 20px;
@@ -209,7 +198,7 @@ body{
 
   .principal-img img {
     width: 100%;
-    max-width: 300px;
+    max-width: 320px;
   }
 
   .principal-texto {
@@ -219,11 +208,11 @@ body{
   }
 
   .principal-texto h1 {
-    font-size: 32px;
+    font-size: 38px;
   }
 
   .principal-texto p {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .seccion-naranja {
@@ -231,26 +220,32 @@ body{
   }
 
   .seccion-naranja p {
-    font-size: 18px;
+    font-size: 22px;
   }
 
   .seccion-naranja img {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
   }
 
+  .seccion h1 {
+    font-size: 34px;
+  }
+
+
   .proyectos-container {
-    padding: 10px;
+    padding: 20px;
+    text-align: center;
   }
 
   .card {
-    width: 90%;
+    width: 320px; 
     margin: 15px auto;
+    display: inline-block;
   }
 
   .footer {
     padding: 10px 20px;
     text-align: center;
   }
-
 }
