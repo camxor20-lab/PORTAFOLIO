@@ -1,0 +1,37 @@
+#BA{
+    background-color: whitesmoke;
+    border: 2px solid green;
+    padding: 10px;
+    color: green;
+    text-align: center;
+}
+
+.IMG{
+   border-radius: 5px;
+    background-color: white;
+    width: 200px;
+}
+
+table{
+    background-color: green;
+    width: 100%;
+}
+
+td{
+    text-align: center;
+
+}
+
+p{
+    color: green;
+   text-align: center;
+   background-color: whitesmoke;
+}
+
+#BT{
+    background-color: black;
+    color: white;
+    border: 3px solid green;
+    text-align: center;
+
+}
