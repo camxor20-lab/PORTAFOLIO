@@ -1,0 +1,238 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #fff;
+}
+
+.container {
+
+    margin: 20px;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.logo {
+    font-weight: 900;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 50px;
+    font-size: 28px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* HERO */
+.hero {
+    background-color: #f0f0f0;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    height: 500px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.hero-content {
+    flex: 1;
+    padding-left: 80px;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.hero-title {
+    font-size: 5rem;
+    line-height: 1;
+    margin: 10px 0;
+}
+
+.hero-bg-text {
+    font-size: 7rem;
+    color: rgba(0, 0, 0, 0.03);
+    font-weight: 900;
+    margin-top: -40px;
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.hero-image img {
+    height: 400px;
+}
+
+/* BOTONES */
+button {
+    padding: 12px 28px;
+    border-radius: 30px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-red {
+    background: #f42c37;
+    color: white;
+}
+
+.btn-white {
+    background: white;
+    color: #f42c37;
+}
+
+/* GRID CATEGORIAS */
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 320px;
+    gap: 20px;
+    margin-bottom: 60px;
+}
+
+.card {
+    border-radius: 30px;
+    padding: 30px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.card-text {
+    flex: 1;
+}
+
+.card h3 {
+    color: white;
+    font-size: 1.8rem;
+    margin: 10px 0;
+}
+
+.card p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.card img {
+    max-height: 180px;
+    object-fit: contain;
+}
+
+.span-2 {
+    grid-column: span 2;
+}
+
+/* COLORES CARDS */
+.card-black {
+    background: #1a1a1a;
+}
+
+.card-yellow {
+    background: #feba2f;
+}
+
+.card-red {
+    background: #f42c37;
+}
+
+.card-grey {
+    background: #ededed;
+}
+
+.card-grey h3,
+.card-grey p {
+    color: #333;
+}
+
+.card-green {
+    background: #2ed17e;
+}
+
+.card-blue {
+    background: #157aff;
+}
+
+/* FEATURES */
+.features {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.feature-item span {
+    font-size: 2rem;
+}
+
+.feature-item h4 {
+    font-size: 1rem;
+}
+
+.feature-item p {
+    font-size: 0.8rem;
+    color: #888;
+}
+
+/* BANNER ROJO SALE */
+.banner-sale {
+    background: #f42c37;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 60px;
+    margin-bottom: 60px;
+    color: white;
+}
+
+.banner-image img {
+    height: 280px;
+}
+
+.banner-text h2 {
+    font-size: 4rem;
+    font-weight: 900;
+    margin: 10px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
