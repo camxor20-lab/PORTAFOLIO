@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.18.1/axios.js"></script>
+ <title>Document</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="tarjeta">
+
+<h1 id="nombre"></h1>
+<img id="avatar">
+<p id="genero"></p>
+ <p id="correo"></p>
+ <p id="telefono"></p>
+ <p id="ubicacion"></p>
+
+ </div>
+
+ <script>
+
+ document.addEventListener("DOMContentLoaded", async()=>{
+ let res =await axios.get("https://randomuser.me/api/")
+console.log(res);
+ let nombre = document.getElementById("nombre")
+ let img = document.getElementById("avatar")
+ let genero = document.getElementById("genero")
+ let correo = document.getElementById("correo")
+ let telefono = document.getElementById("telefono")
+ let ubicacion = document.getElementById("ubicacion")
+
+ nombre.textContent = res.data.results[0].name.first
+ img.src = res.data.results[0].picture.large
+ genero.textContent=res.data.results[0].gender
+ correo.textContent=res.data.results[0].email
+ telefono.textContent=res.data.results[0].phone
+ ubicacion.textContent=res.data.results[0].location.country
+ })
+
+ </script>
+</body>
+</html>

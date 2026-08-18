@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.18.1/axios.js"></script>
+    <title>100 Tarjetas de Usuario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Contenedor donde se insertarán todas las tarjetas -->
+    <div id="contenedor"></div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", async () => {
+            try {
+                // Solicitamos 100 usuarios en una sola petición a la API
+                let res = await axios.get("https://randomuser.me/api/?results=100");
+                let usuarios = res.data.results;
+                
+                // Guardamos la lista completa globalmente para acceder por índice
+                window.usuariosLista = usuarios;
+
+                let contenedor = document.getElementById("contenedor");
+
+                // Recorremos el arreglo pasando el índice como segundo parámetro
+                usuarios.forEach((usuario, index) => {
+                    // Añadimos onclick="verDetalle(index)" a la tarjeta
+                    let tarjetaHTML = `
+                        <div class="tarjeta" onclick="verDetalle(${index})">
+                            <!-- Estrella de favoritos -->
+                            <span class="btn-favorito" onclick="toggleFavorito(event, this)">☆</span>
+
+                            <h1 class="nombre">${usuario.name.first} ${usuario.name.last}</h1>
+                            <img class="avatar" src="${usuario.picture.large}" alt="Avatar">
+                            <p class="genero">${usuario.gender}</p>
+                            <p class="correo">${usuario.email}</p>
+                            <p class="telefono">${usuario.phone}</p>
+                            <p class="ubicacion">${usuario.location.country}</p>
+                        </div>
+                    `;
+
+                    // Añadimos la tarjeta al contenedor principal
+                    contenedor.innerHTML += tarjetaHTML;
+                });
+
+            } catch (error) {
+                console.error("Error al obtener los usuarios:", error);
+            }
+        });
+
+        // Función para guardar los datos de la tarjeta seleccionada y redirigir
+        function verDetalle(index) {
+            let usuarioSeleccionado = window.usuariosLista[index];
+            
+            // Guardamos los datos en el navegador
+            localStorage.setItem("usuarioDetalle", JSON.stringify(usuarioSeleccionado));
+            
+            // Navegamos hacia la carpeta '1' y abrimos '1tarjeta.html'
+            window.location.href = "../1/1tarjeta.html";
+        }
+
+        // Función para marcar o desmarcar la estrella de favoritos
+        function toggleFavorito(event, elemento) {
+            // Evita que al hacer clic en la estrella se dispare la redirección verDetalle
+            event.stopPropagation();
+
+            if (elemento.textContent === "☆") {
+                elemento.textContent = "★";
+                elemento.classList.add("favorito-activo");
+            } else {
+                elemento.textContent = "☆";
+                elemento.classList.remove("favorito-activo");
+            }
+        }
+    </script>
+</body>
+</html>

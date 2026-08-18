@@ -1,0 +1,76 @@
+body {
+    font-family: sans-serif;
+}
+
+.tarjeta {
+    margin: 100px auto 0;
+    background: linear-gradient(135deg, #ff4b4b, #d90000);
+    padding: 20px;
+    width: 300px;
+    min-height: 180px;
+
+    border-radius: 15px;
+    border: 1px solid #ffffff33;
+    border-bottom: 4px solid #990000;
+
+    box-shadow: 0 10px 25px #0004;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 35px #0005;
+}
+
+#nombre {
+    text-align: center;
+    cursor: pointer;
+}
+
+#nombre:hover {
+    color: purple;
+}
+
+#avatar {
+    height: 170px;
+    width: 170px;
+    align-self: center;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#avatar:hover {
+    transform: scale(1.06);
+}
+
+
+#genero{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#correo{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#telefono{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#ubicacion{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
